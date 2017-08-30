@@ -1,2 +1,22 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+title {
+  color: blue;
+}
+
+h1{
+  color: #367342;
+  font-size: 70px;
+  text-align: center;
+}
+
+p {
+color: #367342;
+  font-size: 18px;
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+}
