@@ -48,6 +48,7 @@ const changePasswordFailure = function (error) {
 }
 
 
+
 module.exports = {
   signUpSuccess,
   signUpFailure,
@@ -56,6 +57,6 @@ module.exports = {
   signOutSuccess,
   signOutFailure,
   changePasswordSuccess,
-  changePasswordFailure
+  changePasswordFailure,
 
 }

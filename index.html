@@ -12,10 +12,12 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
 
+
     <body class="container-fluid">
+      <p id='message'></p>
       <form id="sign-up">
         <fieldset>
-          <legend></legend>
+
           <input type ="text" name = "credentials[email]" placeholder="email">
           <input type ="text" name = "credentials[password]" placeholder="password">
           <input type ="text" name = "credentials[password_confirmation]" placeholder="password_confirmation">
@@ -48,7 +50,33 @@
 
       <h1>Chuck's Tic Tac Toe!</h1>
 
-    
+      <h1 class="Winner"></h1>
+    <h1 class="Tie"></h1>
+
+
+      <div id="gameboard">
+        <div class="row">
+          <div id="0" class="col-xs-4 box game-cell"></div>
+          <div id="1" class="col-xs-4 box game-cell"></div>
+          <div id="2" class="col-xs-4 box game-cell"></div>
+        </div>
+        <div class="row">
+          <div id="3" class="col-xs-4 box game-cell"></div>
+          <div id="4" class="col-xs-4 box game-cell"></div>
+          <div id="5" class="col-xs-4 box game-cell"></div>
+        </div>
+        <div class="row">
+          <div id="6" class="col-xs-4 box game-cell"></div>
+          <div id="7" class="col-xs-4 box game-cell"></div>
+          <div id="8" class="col-xs-4 box game-cell"></div>
+        </div>
+      </div>
+
+      <button class="button game-new">Start New Game</button>
+      <button class="button game-reset">Clear Board</button>
+
+    </body>
+    <script src="./index.js"></script>
 
 
 
