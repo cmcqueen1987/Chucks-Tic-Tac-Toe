@@ -11,11 +11,6 @@ let player1 = true
 $(() => {
   setAPIOrigin(location, config)
 
-  let turnCount = 0
-
-const turnCounter = function () {
-  turnCount++
-}
 
   $('#0').on('click', function () {
     $('#0').text()
@@ -188,17 +183,6 @@ const checkWinner = function () {
   }
 }
 
-const drawLog = function () {
-  $('.Tie').text('Tie!!!!!!')
-}
-
-const tieGame = function () {
-  if (turnCount > 8) {
-    drawLog()
-  } else {
-    return false
-  }
-}
 
 
 

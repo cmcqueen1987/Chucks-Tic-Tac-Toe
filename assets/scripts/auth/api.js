@@ -39,12 +39,22 @@ const changePassword = function (data) {
   })
 }
 
+const newGame = function () {
+  return $.ajax({
+    url: config.apiOrigin + '/games',
+    method: 'POST',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    }
+  })
+}
 
 
 module.exports = {
   signUp,
   signIn,
   signOut,
-  changePassword
+  changePassword,
+  newGame
 
 }
